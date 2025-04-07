@@ -1,0 +1,15 @@
+init_config:
+  min_collection_interval: 15
+
+python_module: helloworld2
+
+instances:
+  - {}
+  # - log_dir: /opt/datadog-agent/logs  # Optional override
+
+logs:
+  - type: file
+    path: /tmp/helloworld2.log
+    service: helloworld2
+    source: custom
+  
